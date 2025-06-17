@@ -5,7 +5,7 @@ const auth = firebase.auth();
     return auth.createUserWithEmailAndPassword(email, password);
  }
 
- const loginUser = ( email, password) => {
+ const loginUser = (email, password) => {
     return auth.signInWithEmailAndPassword( email, password);
  }
 
@@ -18,7 +18,7 @@ const auth = firebase.auth();
  }
 
  const loginWithGoogle = () => {
-    const provider = new firebase.auth.GoogleAuthProvider;
+    const provider = new firebase.auth.GoogleAuthProvider();
     return auth.signInWithPopup(provider);
  }
 
